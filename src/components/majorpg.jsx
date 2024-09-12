@@ -34,7 +34,7 @@ export default function Component() {
               View Portfolio
             </Link>
             <Link
-              href="/ShrushtiGanorkar_Resume.pdf"
+              href="/ShrushtiResume2.1.6.new.pdf"
               className="inline-flex h-10 items-center justify-center rounded-md bg-secondary-foreground px-8 text-sm font-medium text-secondary shadow transition-colors hover:bg-secondary-foreground/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
               prefetch={false}
             >
