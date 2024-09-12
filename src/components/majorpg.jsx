@@ -75,7 +75,7 @@ export default function Component() {
             Get in Touch
           </Link>
           <Link
-            href="/ShrushtiGanorkar_Resume.pdf"
+            href="/ShrushtiResume2.1.6.new.pdf"
             className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-dark-800 hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
             prefetch={false}
           >
