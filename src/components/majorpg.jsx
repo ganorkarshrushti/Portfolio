@@ -5,16 +5,19 @@ import { Button } from "@/components/ui/button";
 
 export default function Component() {
   return (
-    <div className="flex flex-col min-h-[100dvh]">
-      <header className="sticky top-0 z-50 px-4 lg:px-6 h-14 flex items-center bg-background">
+    <div className="flex flex-col min-h-screen">
+
+<header className="fixed top-[-5px] left-0 w-full z-50 px-4 lg:px-6 h-12 flex items-center bg-background shadow-md transform -translate-y-2">
+
+
         <Link href="#" className="flex items-center justify-center" prefetch={false}>
           <span className="sr-only">Shrushti Ganorkar's Portfolio</span>
         </Link>
         
       </header>
-      <main className="flex-1">
-  <section className="w-full py-4 md:py-15 lg:py-20 bg-secondary">
-    <div className="container px-4 md:px-6">
+      <main className="flex-1 mt-4">
+  <section className="w-full py-4 md:py-15 lg:py-20 bg-secondary -mt-28">
+    <div className="container px-2 md:px-4">
       <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
         <div className="flex flex-col justify-center space-y-4 text-secondary-foreground">
           <div className="space-y-2">
@@ -34,7 +37,7 @@ export default function Component() {
               View Portfolio
             </Link>
             <Link
-              href="/ShrushtiResume2.1.6.new.pdf"
+              href="/_Shrushti_Ganorkar_Resume.pdf"
               className="inline-flex h-10 items-center justify-center rounded-md bg-secondary-foreground px-8 text-sm font-medium text-secondary shadow transition-colors hover:bg-secondary-foreground/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
               prefetch={false}
             >
@@ -46,7 +49,7 @@ export default function Component() {
           <img
             src="/myProfPic.png"
             alt="Shrushti Ganorkar"
-             className="rounded-full w-26 h-26 object-cover shadow-md border-2 border-gray-300"
+             className="rounded-full w-25 h-25 object-cover shadow-md border-2 border-gray-300"
           />
         </div>
       </div>
@@ -61,7 +64,7 @@ export default function Component() {
         <div className="space-y-2">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">About Me</h2>
           <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            I am a B.Tech. student in Computer Engineering specializing in MERN stack web development, with strong hands-on experience in frontend development. My focus is on creating seamless, user-friendly websites. With strong leadership and communication skills, I thrive in collaborative environments. I am eager to contribute my skills and continue growing through new opportunities in the tech industry.
+          I am a dedicated web developer with extensive hands-on experience in frontend technologies , including React.js and Tailwind CSS, with a strong focus on crafting seamless, user-friendly websites. During my internship at Swashamtaa Foundation,I developed an online mental health platform using the MERN stack, leveraging React.js, Node.js, Express, and MongoDB to deliver seamless functionality and a user-friendly experience and gained valuable experience working with advanced AI technologies. Leveraging my leadership and communication skills, I excel in collaborative environments and am eager to apply my expertise while continuously growing through new opportunities in the tech industry.
           </p>
         </div>
 
@@ -75,7 +78,7 @@ export default function Component() {
             Get in Touch
           </Link>
           <Link
-            href="/ShrushtiResume2.1.6.new.pdf"
+            href="/_Shrushti_Ganorkar_Resume.pdf"
             className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-dark-800 hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
             prefetch={false}
           >
@@ -106,6 +109,7 @@ export default function Component() {
   </div>
 </section>
 
+
         <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
           <div className="container px-4 md:px-6">
             <div className="text-center mb-8">
@@ -115,7 +119,8 @@ export default function Component() {
               </p>
             </div>
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 sm:grid-cols-2 md:grid-cols-3 lg:gap-12">
-              <div className="relative overflow-hidden rounded-lg shadow-lg group hover:shadow-xl">
+             {/*Project1*/}
+             <div className="relative overflow-hidden rounded-lg shadow-lg group hover:shadow-xl">
                 <Link href="https://new-inner-balance.vercel.app/" className="absolute inset-0 z-10" prefetch={false}>
                   <span className="sr-only">View Project</span>
                 </Link>
@@ -127,6 +132,7 @@ export default function Component() {
                   className="object-cover w-full h-64 transition-all duration-300 ease-in-out group-hover:scale-105"
                   style={{ aspectRatio: "550/310", objectFit: "cover" }}
                 />
+               
                 <div className="absolute inset-0 bg-secondary/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="text-center">
                     <h3 className="text-2xl font-bold text-secondary-foreground">Inner Balance</h3>
@@ -139,9 +145,9 @@ export default function Component() {
                   <h4 className="text-xl font-semibold text-secondary-foreground">Project-1</h4>
                 </div>
               </div>
-
+         
               <div className="relative overflow-hidden rounded-lg shadow-lg group hover:shadow-xl">
-                <Link href="https://jira-kanban-board.vercel.app/" className="absolute inset-0 z-10" prefetch={false}>
+                <Link href="" className="absolute inset-0 z-10" prefetch={false}>
                   <span className="sr-only">View Project</span>
                 </Link>
                 <img
@@ -165,12 +171,12 @@ export default function Component() {
                 </div>
               </div>
 
-              <div className="relative overflow-hidden rounded-lg shadow-lg group hover:shadow-xl">
-                <Link href="https://example.com" className="absolute inset-0 z-10" prefetch={false}>
+              <div className="relative overflow-hidden rounded-lg shadow-lg group hover:shadow-xl w-64 h-64">
+                <Link href="https://fit-track-theta.vercel.app/" className="absolute inset-0 z-10" prefetch={false}>
                   <span className="sr-only">View Project</span>
                 </Link>
                 <img
-                  src="medicine.png"
+                  src="gym.jpg"
                   width="550"
                   height="310"
                   alt="Example Project"
@@ -179,9 +185,9 @@ export default function Component() {
                 />
                 <div className="absolute inset-0 bg-secondary/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="text-center">
-                    <h3 className="text-2xl font-bold text-secondary-foreground">WellPharma</h3>
+                    <h3 className="text-2xl font-bold text-secondary-foreground">Fit-Track</h3>
                     <p className="text-sm text-secondary-foreground mt-2">
-                    An online medical shop providing a secure e-commerce platform for users to browse and purchase products.
+                    A computer vision-based workout tracking system using MediaPipe and OpenCV, providing real-time pose detection, form evaluation, and personalized feedback for fitness enthusiasts.
                     </p>
                   </div>
                 </div>
@@ -191,7 +197,10 @@ export default function Component() {
               </div>
             </div>
           </div>
+         
+
         </section>
+        
         <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
           <div className="container px-4 md:px-6">
             <div className="text-center mb-8">
